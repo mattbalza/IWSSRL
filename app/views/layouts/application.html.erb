@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>I.W.S. - Innovating Washing System</title>
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  	<%= csrf_meta_tags %>
+	</head>
+	
+	<body>
+		<%= render 'layouts/header' %>
+		<% flash.each do |name, msg| %>
+		   <%= content_tag(:div, msg, class: "alert alert-info") %>
+			<% end %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+	</body>
+
+</html>
