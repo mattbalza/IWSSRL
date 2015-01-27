@@ -1,0 +1,250 @@
+
+
+/*----- LESS -----*/
+$navbar-default-link-active-bg:	#346782;
+$navbar-default-link-active-color: #fff;
+$navbar-default-link-hover-bg: #346782;
+$navbar-default-link-hover-color: #fff;
+$navbar-default-link-color: #346782;
+
+
+
+/*----- BOOTSTRAP LIBRARIES -----*/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+/*----- UNIVERSALITA' -----*/
+
+body { 
+	padding-top: 50px; 
+	font-size:18px !important;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.center { text-align: center; }
+
+.btn-primary { background-color:#346782;  } 
+
+
+h3 { color: #346782; }
+
+article p { text-align:justify; }
+
+.titolone { margin-top:50px; }
+
+.clr, .form-group { color:#346782; }
+
+.gretel { background-color:#f5f5f5; }
+
+textarea.form-control {
+	height:90px;
+	width: 100%;
+}
+
+.container-fluid { color:#000; }
+
+
+
+/*----- NAVBAR -----*/
+
+.nav-color { background-color:#fff; }
+
+.navbar-nav { 
+	margin-right:20px; 
+	margin-top:10px;
+	 }
+
+.navbar-nav > li { padding-right:5px; }
+
+.navbar { 
+	border: 1px solid #346782; 
+	min-height:70px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; /* future proofing */ 
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+	}
+
+.navbar-default .navbar-nav > li > a {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */ 
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+}
+
+.logo {
+	width:150px;
+	margin-top:-10px;
+	margin-left:30px;
+}
+
+
+
+/*----- HEADER -----*/
+
+
+.carousel-sfondo > .item {
+		margin: 0 auto;
+    width:100%;
+    height:500px;
+}
+
+.carousel-caption { top:150px;}
+
+.carousel-caption > h1 {
+	color:#fff; 
+	margin-top:-60px;
+	font-size:60px; 
+	text-shadow:none;
+}
+
+.carousel-caption p {
+	color:#fff; 
+	font-size:35px; 
+	text-shadow:none;
+}
+
+
+
+/*----- HOME -----*/
+
+.homecar { margin-top:50px}
+
+
+/* Trittico */
+.trittico {
+	margin-top:30px;
+	margin-left:60px;
+	margin-right:60px;
+	text-align:center;
+}
+
+.thumbnail-trittico { padding-top:30px; border:none;}
+
+.thumbnail-trittico > img { width:100px; }
+
+img[alt="Reliability"] {
+	width:90px; 
+	height:80px;
+}
+
+
+/*----- SPECIALITA' -----*/
+
+/* Slider Prodotti */
+.btn-centro-destra{
+	float: right !important;
+	padding-right: 45px;
+	margin-top: 5px;
+}
+
+/* Immagini Prodotti */
+.pointer { cursor: pointer; cursor: hand; }
+
+/* Scacchiera */
+.scaccomatto { margin: 10px 60px 10px 60px; }
+.scaccomatto .col-md-7 article p { margin-right:100px; }
+
+.quadrato { 
+	margin-top:30px; 
+	padding-left:40px; 
+}
+
+.flyer { margin-top:50px; }
+.flyer > h3 { color:#346782; }
+.flyer > p { color:#000; }
+
+
+
+/*----- ABOUT -----*/
+
+article .col-md-8 p { 
+	margin:20px; 
+	color: #346782;
+}
+
+
+
+/*----- CONTACT US -----*/
+
+.send { margin-right:-30px; }
+
+.widget-contact > .col-md-4 {
+	margin-left:25px;
+	margin-top:25px;
+}
+
+address { font-style:italic; }
+
+
+
+/*----- FOOTER -----*/
+
+.foot-left {
+	float:left;
+	margin-top:15px;
+}
+
+.foot-right {
+	float:right;
+	margin-top:15px;
+}
+
+.navbar-static-bottom {
+	margin-bottom:0px;
+	margin-top:50px;
+	background-color:#346782;
+	color:#fff;
+}
+
+
+
+/*----- RESPONSIVE TEXT -----*/
+
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    	.carousel-caption h1 { font-size:30px; }
+    	.carousel-caption p { font-size:20px; }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    	.carousel-caption h1 { font-size:35px; }
+    	.carousel-caption p { font-size:25px; }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    	.carousel-caption h1 { font-size:40px; }
+    	.carousel-caption p { font-size:30px; }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    	.carousel-caption h1 { font-size:45px; }
+    	.carousel-caption p { font-size:35px; }
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    	.carousel-caption h1 { font-size:50px; }
+    	.carousel-caption p { font-size:40px; }
+
+    }
+
