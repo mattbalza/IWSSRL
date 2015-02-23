@@ -14,7 +14,7 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-5 col-md-offset-2"> <!--contact form-->
+      <div class="col-xs-11 col-md-5 col-md-offset-2 contactz"> <!--contact form-->
         <div class="boxed-grey">
           <div class="row">
                           
@@ -44,31 +44,21 @@
               <%= f.text_area :message, :required => true, placeholder: 'Message', control_col: "col-md-6", :input_html => {:rows => 9, :cols => 25} %>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-xs-11 col-md-12">
             <%= f.submit "Send Messsage", :class=> "btn btn-primary btn-skin pull-right send" %>
           </div>
         </div>
       </div> <!-- /contact form-->
               
       <div class="widget-contact row"> <!-- address info--> 
-        <div class="col-sx-10 col-sm-10 col-md-4">
+        <div class="col-xs-11 col-md-4">
         <strong>I.W.S. - Innovating Washing System S.r.l.</strong><br>
           <address>
             Str. Episcop A. Pasha n°10<br/>
             300080 Timisoara<br/>
             <br/>
           </address>
-          <u>Worldwide Agent for:</u>
-          <br/>
-          <address>
-            G.M.I. - Glass Market Industries N.V.
-            <br/>
-            Eikelaarstraat, 23
-            <br/>
-            3600 Genk
-            <br/>
-            Belgium
-          </address>
+          <div id="map-canvas" class="center-block"></div>
         </div>           
         <div class="col-md-6"> </div>
       </div> <!-- /address info-->

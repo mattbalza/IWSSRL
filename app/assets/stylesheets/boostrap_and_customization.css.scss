@@ -191,14 +191,26 @@
 
 /*==========  CONTACT US  ==========*/
 
-	.send { margin-right:-30px; }
+	address { font-style:italic; 
+            margin-bottom:0px;
+          }
 
-	.widget-contact > .col-md-4 {
-		margin-left:25px;
-		margin-top:25px;
-	}
+  .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
 
-	address { font-style:italic; }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        width:600px;
+        height:480px;
+    }
 
 /*==========  /CONTACT US  ==========*/
 
@@ -253,7 +265,12 @@
     	.quadrato { padding-left:0px; } 
     	// IGL
     	.scaccomatto .cen-igl img { margin-left:50%;}
-
+      .widget-contact > .col-md-4 { margin-left:25px; margin-top:65px; }
+      .contactz { margin-left:15px; }
+      .widget-contact > .col-xs-11 { text-align:center; }
+      #map-canvas { width:350px; height:350px; }
+      .send { margin-right:-60px; }
+      .has-feedback label ~ .form-control-feedback { top: 30px; }
     }
 
     /*--- Extra Small Devices, Phones ---*/ 
@@ -262,6 +279,7 @@
     	.carousel-caption h1 { font-size:35px; }
     	.carousel-caption p { font-size:25px; }
     	.scaccomatto .col-md-7 article p { margin-right:-90px; }
+      #map-canvas { width:438px; height:350px; }
     }
 
     /*--- Small Devices, Tablets ---*/
@@ -269,6 +287,8 @@
     	// Universali
     	.carousel-caption h1 { font-size:40px; }
     	.carousel-caption p { font-size:30px; }
+      .widget-contact > .col-md-4 { margin-top:45px; }
+      #map-canvas { width:667px; height:480px; }
     }
 
     /*--- Medium Devices, Desktops ---*/
@@ -283,7 +303,11 @@
     	img[alt="VTL 400 OT Super Inox-1"],
     	img[alt="VTL 400 OT Super Inox-2"] { width:300px; }
     	// IGL
-    	.scaccomatto .cen-igl img { margin-left:auto;}
+    	.scaccomatto .cen-igl img { margin-left:auto; }
+      .widget-contact > .col-md-4 { margin-top:25px; }
+      .send { margin-right:-30px; }
+      #map-canvas { width:357px; height:255px; }
+      .widget-contact > .col-xs-11 { text-align:left; }
     }
 
     /*--- Large Devices, Wide Screens ---*/
